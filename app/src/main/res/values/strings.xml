@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">updated</string>
+    <string name="edittext_hint"><font style="" size="16">Provide URL, link, etc..</font></string>
+    <string name="otp">OTP</string>
+
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="28dp"
+    android:paddingEnd="28dp"
+    tools:ignore="ExtraText">
+
+    <RelativeLayout
+        android:id="@+id/homescreen"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/svgviewer_output"
+        android:layout_gravity="center_horizontal"
+        android:clipToOutline="true"
+        android:layout_marginTop="72dp"
+        android:elevation="25dp"
+        android:translationZ="20dp"/>
+
+    <Button
+        android:id="@+id/insert"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/rounded_button"
+        android:clickable="true"
+        android:elevation="30dp"
+        android:focusable="true"
+        android:fontFamily="@font/metropolis_semibold"
+        android:padding="12dp"
+        android:text="Drop an image"
+        android:textAllCaps="false"
+        android:textColor="#F5F5F5"
+        android:textSize="17sp" />
+
+<!--    <ImageButton-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="120dp"-->
+<!--        android:layout_marginTop="-35dp"-->
+<!--        android:elevation="30dp"-->
+<!--        android:src="@drawable/svgviewer_output4"-->
+<!--        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />-->
+
+
+    <EditText
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/shadow_button_layer_list"
+        android:elevation="5dp"
+        android:fontFamily="@font/metropolis_semibold"
+        android:hint="@string/edittext_hint"
+        android:inputType="text"
+        android:longClickable="false"
+        android:paddingStart="16dp"
+        android:shadowColor="#F5F5F5"
+        android:shadowDx="-2"
+        android:shadowDy="-2"
+        android:shadowRadius="1.5"
+        android:textColor="#000"
+        android:textColorHint="#B4B4B4"
+        android:textSize="17sp" />
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/contact_num"-->
+    <!--        android:layout_width="296dp"-->
+    <!--        android:layout_height="45dp"-->
+
+    <!--        android:textSize="10sp"-->
+    <!--        android:layout_alignParentLeft="true"-->
+    <!--        android:layout_marginLeft="32dp"-->
+    <!--        android:layout_alignParentTop="true"-->
+    <!--        android:layout_marginTop="30dp"-->
+    <!--        />-->
+
+    <Button
+        android:id="@+id/Gen"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/rounded_button"
+        android:clickable="true"
+        android:elevation="30dp"
+        android:focusable="true"
+        android:fontFamily="@font/metropolis_semibold"
+        android:padding="12dp"
+        android:text="Generate QR"
+        android:textAllCaps="false"
+        android:textColor="#F5F5F5"
+        android:textSize="17sp" />
+
+<!--    <ImageButton-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="125dp"-->
+<!--        android:layout_marginTop="-35dp"-->
+<!--        android:elevation="30dp"-->
+<!--        android:src="@drawable/qrimg"-->
+<!--        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />-->
+</LinearLayout>
