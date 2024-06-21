@@ -16,6 +16,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "updated"
+rootProject.name = "new firebase"
 include(":app")
  

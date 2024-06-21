@@ -78,4 +78,6 @@ dependencies {
     implementation("com.google.android.material:material:1.4.0")
     implementation("com.github.mukeshsolanki.android-otpview-pinview:otpview:3.1.0")
     implementation ("io.github.chaosleung:pinview:1.4.4")
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
 }

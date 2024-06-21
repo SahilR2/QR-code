@@ -10,7 +10,6 @@ import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
 import android.view.View
-import android.view.Window
 import android.view.WindowManager
 import android.widget.Button
 import android.widget.EditText
@@ -21,11 +20,11 @@ import androidx.activity.ComponentActivity
 import androidx.annotation.RequiresApi
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.input.key.Key.Companion.Window
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.graphics.drawable.toBitmap
+import com.example.network.ApiClient
+import com.example.network.ApiService
 import com.example.updated.ui.theme.UpdatedTheme
 import com.github.sumimakito.awesomeqr.AwesomeQrRenderer
 import com.github.sumimakito.awesomeqr.option.RenderOption
@@ -34,6 +33,7 @@ import com.github.sumimakito.awesomeqr.option.color.Color
 import java.io.ByteArrayOutputStream
 import java.io.IOException
 import java.io.InputStream
+
 
 private const val TAG = "MainActivity"
 private const val PICK_PHOTO_CODE=123
@@ -55,7 +55,16 @@ class MainActivity : ComponentActivity() {
 // Hide both the navigation bar and the status bar.
 // Hide both the navigation bar and the status bar.
         // Hide the status bar.
-
+//        val apiService: ApiService = ApiClient.getClient().create(ApiService::class.java)
+//
+//
+//        // Login
+//        login(apiService, "username", "password")
+//
+//        // Fetch plans
+//
+//        // Fetch plans
+//        fetchPlans(apiService)
 // Remember that you should never show the action bar if the
 // status bar is hidden, so hide that too if necessary.
 
